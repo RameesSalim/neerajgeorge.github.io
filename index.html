@@ -11,7 +11,23 @@
 
   gtag('config', 'UA-102289409-4');
 </script>
+<style>
 
+.container .row {
+  display: flex;
+  flex-direction: column;
+}
+.container .row section:first-child {
+  display: flex;
+  align-items: flex-start; /* new */
+  margin-bottom: 25px;
+}
+.container img {
+  width: 125px;
+  height: auto;
+}
+
+</style>
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -47,7 +63,11 @@
   <header id="header" class="header-tops">
 
     <div class="container">
-    <div class="row" style="height: auto;"><img src="assets/img/favicon.png" class="img-fluid rounded float-left" height="50px" width="120px" style="padding-bottom: 10px;"></div>
+    <div class="row" style="height: auto;">
+    <section>
+      <img src="assets/img/favicon.png" class="img-fluid rounded float-left" height="50px" width="120px" style="padding-bottom: 10px;">
+</section>
+    </div>
       <h1><a href="index.html">CrutchTrekker</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/favicon.png" alt="" class="img-fluid"></a> -->
